@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sillaber</title>
+</head>
+<body>
+    <textarea name="" id="sillabus" cols="120" rows="10">Non so che viso avesse, neppure come si chiamava,
+        con che voce parlasse, con quale voce poi cantava,
+        quanti anni avesse visto allora, di che colore i suoi capelli,
+        ma nella fantasia ho l'immagine sua:
+        gli eroi son tutti giovani e belli</textarea>
+
+    <button id="sillaba">SILLABA</button>
+
+    <div id="sillabus_">
+
+    </div>
+    
+
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="sillaber.js"></script>
+
+    <style>
+    /* * {
+        font-family: 'Courier New', Courier, monospace
+    } */
+    table > thead {
+        text-align: center;
+    }
+    table > tbody > tr > td {
+        padding: 4px 8px;
+    }
+    #sillabus_ {
+        margin: 20px
+    }
+    .phrase {
+        margin: 40px 0;
+    }
+    .phrase * {
+        display: inline-block;
+    }
+    .phrase > span {
+        margin: 0 18px;
+    }
+    .phrase > span:hover{
+        background: lightblue
+    }
+    .phrase > span > span {
+        position: relative;
+        padding: 4px;
+        font-size: 18px;
+        border: none;/*1px solid gray;*/
+        border-radius:  0;
+        border-right: none;
+    }
+    .phrase > span > span:first-child {
+        border-top-left-radius:  5px;
+        border-bottom-left-radius:  5px;
+        margin-right: 0px;
+    }
+    .phrase > span > span:last-child {
+        border-top-right-radius:  5px;
+        border-bottom-right-radius:  5px;
+        margin-right: 0px;
+    }
+    .phrase > span > span:only-child {
+        border-radius:  5px;
+        margin-right: 0px;
+    }
+    .phrase > span > span > span {
+        position: absolute;
+        bottom: -10px;
+        right: 4px;
+        color: gray;   
+        vertical-align: sub;
+        font-size: 12px;
+        z-index: 999
+    }
+    .phrase > span.SFB {
+    }
+    .phrase > span.SFE {
+    }
+    .phrase > span.SFB > span:last-child {
+        border-right: none;
+        border-top-right-radius:  0;
+        border-bottom-right-radius:  0;
+    }   
+    .phrase > span.SFE > span:first-child {
+        border-left: none;
+        border-top-left-radius:  0;
+        border-bottom-left-radius:  0;
+    }
+    .phrase > span.SFB.SFE {
+    }
+    .SFB.SFE > span:only-child {
+        border-left: none;
+        border-right: none;
+        border-radius:  0;
+    }
+    </style>
+</body>
+</html>
